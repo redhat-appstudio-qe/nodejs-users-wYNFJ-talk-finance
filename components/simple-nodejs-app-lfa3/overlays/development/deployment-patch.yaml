@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-lfa3
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-vgff-tenant/nodejs-users/simple-nodejs-app-lfa3@sha256:5c01f06f3335a9b22acb1b1970b292f26094fadc1caff66bd075fed1091d7214
+        name: my-nodejs
+        resources: {}
+status: {}
